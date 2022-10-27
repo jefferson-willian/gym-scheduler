@@ -1,3 +1,7 @@
-let myName: string = 'Jefferson';
+const {Browser} = require('./lib/browser');
 
-console.log(`name: ${myName}`);
+function main() {
+  const browser = new Browser();
+}
+
+main();

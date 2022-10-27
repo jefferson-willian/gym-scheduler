@@ -18,5 +18,8 @@
   "homepage": "https://github.com/jefferson-willian/gym-scheduler#readme",
   "dependencies": {
     "typescript": "^4.8.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.7"
   }
 }
