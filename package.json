@@ -1,0 +1,22 @@
+{
+  "name": "gym-scheduler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jefferson-willian/gym-scheduler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jefferson-willian/gym-scheduler/issues"
+  },
+  "homepage": "https://github.com/jefferson-willian/gym-scheduler#readme",
+  "dependencies": {
+    "typescript": "^4.8.4"
+  }
+}
