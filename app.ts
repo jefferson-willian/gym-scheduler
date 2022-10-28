@@ -16,15 +16,16 @@ require('dotenv').config({ path: __dirname+'/vars.env' });
     await browser.goto(urlHelper.getUrl(dates[i]));
 
     if (!urlHelper.isValid(browser.url())) {
+      console.log('No more dates available. Aborted.');
       // There are no more available dates.
       break;
     }
 
     if (await interactor.maybeChooseSlot() == false) {
-      console.log('No slot available');
+      console.log(dates[i] + ': no slot available');
       continue;
     }
-    console.log('Slot available');
+    console.log(dates[i] + ': slot available');
 
     // Wait for the page to load.
     await browser.getPage().waitForLoadState();
