@@ -30,4 +30,9 @@ export class Interactor {
     await this.browser.getPage().fill("[id=label2]", process.env.APARTMENT!);
     await this.browser.getPage().fill("[id=label3]", process.env.EMAIL!);
   }
+
+  async submitForm(): Promise<void> {
+    console.log("Submitting form...");
+    // TODO.
+  }
 }
