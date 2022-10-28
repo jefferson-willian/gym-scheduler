@@ -1,4 +1,4 @@
-import { chromium, Browser as PlaywrightBrowser, Page } from 'playwright';
+import { chromium, Browser as PlaywrightBrowser, Page } from 'playwright-chromium';
 
 export class Browser {
   private browser: PlaywrightBrowser|undefined;
@@ -7,7 +7,10 @@ export class Browser {
   constructor() {}
 
   async initialize() {
-    this.browser = await chromium.launch({headless: true});
+    this.browser = await chromium.launch({
+      headless: true,
+      chromiumSandbox: false,
+    });
     this.page = await this.browser.newPage();
   }
 
