@@ -10,13 +10,11 @@ export function getDates(): Array<string> {
 
     const day = date.getDay();
     // Skip if not Tuesday or Thursday.
-    if (day != 1 && day != 3) {
+    if (day != 2 && day != 4) {
       continue;
     }
 
-    ret.push(date.getFullYear() + '-' + date.getMonth() + '-' + date.getDate());
-
-    console.log(date);
+    ret.push(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate());
   }
 
   return ret;
