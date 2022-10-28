@@ -15,6 +15,14 @@ export class Browser {
     await this.page!.goto(address);
   }
 
+  getPage(): Page {
+    return this.page!;
+  }
+
+  url(): string {
+    return this.page!.url();
+  }
+
   async close() {
     return this.browser!.close();
   }
