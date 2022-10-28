@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jefferson-willian/gym-scheduler#readme",
   "dependencies": {
+    "playwright": "^1.27.1",
     "typescript": "^4.8.4"
   },
   "devDependencies": {

@@ -1,7 +1,9 @@
-const {Browser} = require('./lib/browser');
+import {Browser} from './lib/browser';
 
-function main() {
+(async () => {
   const browser = new Browser();
-}
 
-main();
+  await browser.initialize();
+  await browser.goto('https://google.com');
+  await browser.close();
+})();
