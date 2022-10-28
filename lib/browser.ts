@@ -8,7 +8,7 @@ export class Browser {
 
   async initialize() {
     this.browser = await chromium.launch({
-      headless: true,
+      headless: process.env.UI ? false : true,
       chromiumSandbox: false,
     });
     this.page = await this.browser.newPage();
