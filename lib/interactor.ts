@@ -32,7 +32,6 @@ export class Interactor {
   }
 
   async submitForm(): Promise<void> {
-    console.log("Submitting form...");
-    // TODO.
+    await this.browser.getPage().locator("[id=submitButton]").click();
   }
 }

@@ -34,6 +34,8 @@ require('dotenv').config({ path: __dirname+'/vars.env' });
 
     if (process.env.SMOKE == undefined) {
       await interactor.submitForm();
+      // Wait for form to be submitted.
+      await browser.getPage().waitForLoadState();
     }
   };
 
